@@ -1,0 +1,25 @@
+[project]
+name = "client"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Chad Rossouw",email = "chadrossouw7247@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+
+[tool.poetry]
+packages = [{include = "client", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+sqlalchemy = ">=2.0.44,<3.0.0"
+dbapi-d1 = {path = "../dbapi-d1", develop = true}
+sqlalchemy-d1 = {path = "../sqlalchemy-d1", develop = true}
+
+[tool.poetry.scripts]
+client = "client.main:main"
+
+[build-system]
+requires = ["dbapi-d1", "sqlalchemy-d1", "poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
