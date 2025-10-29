@@ -16,6 +16,7 @@ python = ">=3.11,<3.12"
 sqlalchemy = ">=2.0.44,<3.0.0"
 dbapi-d1 = {path = "../dbapi-d1", develop = true}
 sqlalchemy-d1 = {path = "../sqlalchemy-d1", develop = true}
+python-dotenv = "^1.2.1"
 
 [tool.poetry.scripts]
 client = "client.main:main"
