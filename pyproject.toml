@@ -13,8 +13,8 @@ packages = [{include = "client", from = "src"}]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
-sqlalchemy = ">=1.4,<2"
 dbapi-d1 = {path = "../dbapi-d1", develop = true}
+sqlalchemy = ">=1.4,<2"
 sqlalchemy-d1 = {path = "../sqlalchemy-d1", develop = true}
 python-dotenv = "^1.2.1"
 
