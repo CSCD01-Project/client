@@ -17,8 +17,13 @@ TEST_LEVELS = [
     4,  # reflection (tables/columns)
 ]
 
-# TO FIRST RUN IN D1 DATABASE CONSOLE, FOR TESTS TO PASS:
-# CREATE TABLE IF NOT EXISTS test_table ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, value INTEGER NOT NULL, active BOOLEAN DEFAULT 1 ); INSERT INTO test_table (id, name, value, active) VALUES (1, 'Alice', 42, 1), (2, 'Bob', 55, 0); CREATE TABLE IF NOT EXISTS another_table ( id INTEGER PRIMARY KEY, description TEXT ); INSERT INTO another_table (id, description) VALUES (1, 'Sample row for reflection');
+# IMPORTANT: FIRST RUN IN D1 DATABASE CONSOLE FOR TESTS TO PASS:
+#
+# CREATE TABLE IF NOT EXISTS test_table ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, value INTEGER NOT NULL, active BOOLEAN DEFAULT 1 ); 
+# INSERT INTO test_table (id, name, value, active) VALUES (1, 'Alice', 42, 1), (2, 'Bob', 55, 0); 
+# 
+# CREATE TABLE IF NOT EXISTS another_table ( id INTEGER PRIMARY KEY, description TEXT ); 
+# INSERT INTO another_table (id, description) VALUES (1, 'Sample row for reflection');
 
 
 class DBAPITests:
